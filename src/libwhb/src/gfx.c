@@ -497,7 +497,7 @@ WHBGfxClearColor(float r, float g, float b, float a)
 {
 	if (sDrawingTv) {
 		GX2ClearColor(&sTvColourBuffer, r, g, b, a);
-		GX2ClearDepthStencilEx(&sDrcDepthBuffer, sDrcDepthBuffer.depthClear, sDrcDepthBuffer.stencilClear, GX2_CLEAR_FLAGS_DEPTH | GX2_CLEAR_FLAGS_STENCIL);
+		GX2ClearDepthStencilEx(&sTvDepthBuffer, sTvDepthBuffer.depthClear, sTvDepthBuffer.stencilClear, GX2_CLEAR_FLAGS_DEPTH | GX2_CLEAR_FLAGS_STENCIL);
 		GX2SetContextState(sTvContextState);
 	}
 	else {
